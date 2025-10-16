@@ -1,11 +1,6 @@
 ## Case Study #1 - Danny's Diner
 _Note: This [website](https://www.db-fiddle.com/f/2rM8RAnq7h5LLDTzZiRWcd/138) contains the schema SQL where I wrote my SQL queries!_
 
-### 💬 Table of Contents
-- [Problem Statement](#problem-statement)
-- [Tables](#tables)
-- [Case Study Question #1](#case-study-questions)
-
 ### 💬 Problem Statement
 Danny has just opened up a new restaurant and does not know how to fully utilize his data to improve his business. He thinks having a deeper connection to the customers will help them have more personalized experience when visting his restaurant.
 Can we use the data to help Danny keep his business alive?
