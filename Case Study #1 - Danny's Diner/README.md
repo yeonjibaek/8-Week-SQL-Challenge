@@ -77,7 +77,34 @@ ORDER BY customer_id ASC;
 
 **3. What was the first item from the menu purchased by each customer?**
 
+sadf
+
 **4. What is the most purchased item on the menu and how many times was it purchased by all customers?**
+
+**Query SQL:**
+```sql
+SELECT
+  	product_name,
+	COUNT(sales.product_id) AS purc_count
+FROM sales
+LEFT JOIN menu
+ON sales.product_id = menu.product_id
+GROUP BY product_name
+ORDER BY purc_count DESC
+LIMIT 1;
+```
+
+**Thought Process:**
+1. I _LEFT JOIN_ sales with menu because we also want to retrieve _product_name_.
+2. I group by _product_name_ and _COUNT_ each of the instances where the item was sold.
+3. _LIMIT_ by 1 after _ORDER BY_ descending order to make sure that we get the most purchased item.
+
+**Answer:**
+| product_name | purc_count |
+|---|---|
+| ramen | 8 |
+
+- The most purchased item on the menu was 'ramen' and it was purchased total of 8 times by all customers.
 
 **5. Which item was the most popular for each customer?**
 
